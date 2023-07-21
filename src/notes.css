@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+.note-app {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+  gap: 20px;
+  background-color: #252525;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.note-form {
+  width: -webkit-fill-available;
+}
+
+.text-input {
+  color: rgb(246, 246, 246);
+  overflow-wrap: break-word;
+  height: 200px;
+}
+
+.notes-utility {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  gap: 50px;
+  color: #f0f1ea;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.remaining-length {
+  width: 100px;
+  color: #fffcff;
+  font-weight: bold;
+}
+.custom-category-container {
+  margin-left: 30px;
+  display: flex;
+  gap: 10px;
+}
+.category-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.select-category,
+.category-input,
+.search-bar,
+.add-cat-note,
+.delete-category-section,
+.delete-cat-button {
+  border: 1px solid #9c0b9e;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #f0f1ea;
+}
+
+.icons {
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.icons:hover {
+  color: #252525;
+  background-color: transparent;
+}
+
+.delete-category-section select,
+.delete-category-section select:focus {
+  border: none;
+}
+
+.delete-cat-button,
+.add-cat-note {
+  cursor: pointer;
+}
+
+.add-new-cat,
+.add-new-note,
+.delete-cat-button {
+  background-color: #9c0b9e;
+  border: 1px solid transparent;
+  color: #f0f1ea;
+}
+
+.add-new-cat:hover,
+.add-new-note:hover,
+.delete-cat-button:hover,
+.edit-button:hover,
+.delete-button:hover {
+  color: #252525;
+  transition: 300ms;
+}
+
+.editing-text-input {
+  color: #f0f1ea;
+  overflow-wrap: break-word;
+  width: 100%;
+  padding: 10px;
+}
+
+.note-list {
+  width: 100%;
+}
+
+.individual-note {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  max-height: 315px;
+  background-color: rgb(79, 73, 73);
+}
+
+.individual-note p,
+div {
+  background-color: inherit;
+}
+
+.individual-note .ql-snow * {
+  background-color: rgb(71, 66, 66);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.note-text {
+  color: rgb(255, 255, 255);
+  width: calc(100% - 300px);
+  cursor: pointer;
+  background-color: transparent;
+  overflow-wrap: break-word;
+}
+
+.note-text p {
+  font-family: sans-serif;
+}
+
+.note-text h1,
+h2,
+h3,
+span {
+  background-color: inherit;
+}
+.edit-delete-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 16px;
+  background-color: #9c0b9e;
+  color: #f0f1ea;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.note-time {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 152px;
+}
+
+/* Quill.js CSS */
+.ql-editor p,
+.ql-editor ol,
+.ql-editor ul,
+.ql-editor pre,
+.ql-editor blockquote,
+.ql-editor h1,
+.ql-editor h2,
+.ql-editor h3,
+.ql-editor h4,
+.ql-editor h5,
+.ql-editor h6 {
+  background-color: inherit;
+}
+.quill-container .ql-editor {
+  background-color: rgb(71, 66, 66);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.ql-editor.ql-blank::before {
+  color: wheat;
+  background-color: rgb(71, 66, 66);
+}
+.ql-snow .ql-tooltip {
+  background-color: #252525 !important;
+  border: unset !important;
+  box-shadow: unset !important;
+  color: #444;
+  padding: 5px 12px;
+  white-space: nowrap;
+}
+.ql-snow .ql-tooltip:before {
+  color: #fffbfb !important;
+}
+.ql-snow .ql-tooltip input[type="text"] {
+  color: white;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.ql-snow .ql-editor a {
+  background-color: inherit;
+  color: blue;
+}
+.ql-snow .ql-tooltip a {
+  color: #9c0b9e;
+}
+.ql-syntax {
+  margin-bottom: 10px !important;
+}
+.note-text ul,
+ol {
+  margin-bottom: 10px;
+}
+.ql-toolbar.ql-snow {
+  padding: 10px !important;
+  background-color: #9c0b9e;
+  border: none !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.ql-toolbar.ql-snow .ql-formats {
+  margin-right: 15px;
+  background-color: unset;
+}
+.ql-container.ql-snow {
+  border: none !important;
+  border-bottom-left-radius: 10px;
+}
+.ql-snow.ql-toolbar button svg,
+.ql-snow .ql-toolbar button svg {
+  background-color: #f0f1ea;
+  border-radius: 10px;
+  padding: 2px;
+}
+.ql-snow .ql-picker.ql-header {
+  width: 150px !important;
+}
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  background-color: #f0f1ea;
+  border-radius: 10px;
+}
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options span {
+  background-color: inherit;
+}
+.ql-toolbar.ql-snow .ql-picker-label {
+  border: 1px solid black;
+  background-color: #f0f1ea;
+  border-radius: 10px;
+}
+.ql-snow .ql-picker.ql-header {
+  background-color: #9c0b9e;
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item::before {
+  background-color: inherit;
+  content: "Normal";
+}
+.ql-editor li:not(.ql-direction-rtl)::before {
+  background-color: inherit;
+}
+.ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
+  background-color: inherit;
+  margin-right: 5px;
+}
+.editing-text-input {
+  margin-bottom: 30px;
+  color: #f0f1ea;
+  overflow-wrap: break-word;
+  width: 1100px !important;
+  height: 200px;
+  vertical-align: top;
+  resize: none;
+  padding: 10px;
+}
+.ql-snow .ql-picker.ql-font {
+  background-color: inherit;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item::before {
+  background-color: #f0f1ea;
+}
+
+.ql-snow .ql-color-picker,
+.ql-snow .ql-icon-picker {
+  background-color: #fff !important;
+  border-radius: 10px;
+}
+.ql-snow .ql-color-picker .ql-picker-label svg,
+.ql-snow .ql-icon-picker .ql-picker-label svg {
+  background-color: transparent;
+}
+.quill-container .ql-editor p span {
+  background-color: inherit;
+}
+.quill-container .ql-editor p strong {
+  background-color: inherit;
+}
+.quill-container .ql-editor p em {
+  background-color: inherit;
+}
+.quill-container .ql-editor p u {
+  background-color: inherit;
+}
+.quill-container .ql-editor p s {
+  background-color: inherit;
+}
+
+.individual-note p span {
+  background-color: inherit;
+}
+.individual-note p strong {
+  background-color: inherit;
+}
+.individual-note p em {
+  background-color: inherit;
+}
+.individual-note p u {
+  background-color: inherit;
+}
+.individual-note p s {
+  background-color: inherit;
+}
+
+.ql-snow .ql-color-picker,
+.ql-snow .ql-icon-picker {
+  background-color: inherit;
+}
+
+.ql-font-Arial {
+  font-family: Arial, sans-serif;
+}
+.ql-font-TimesNewRoman {
+  font-family: "Times New Roman", serif;
+}
+.ql-font-CourierNew {
+  font-family: "Courier New", monospace;
+}
+.quill > .ql-container > .ql-editor.ql-blank::before {
+  font-size: 20px;
+  color: white;
+}
+span.ql-font-serif {
+  font-family: serif;
+}
+span.ql-font-monospace {
+  font-family: monospace;
+}
+
+svg {
+  background-color: #f0f1ea;
+}
